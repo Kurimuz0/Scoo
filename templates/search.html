@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ministry of Educatoring
+        </title>
+        <!img src = "https://www.seab.gov.sg/images/default-source/default-album/seab_logoba82a65ec03b4db6bb20271b22140400.png?sfvrsn=6e64f8ba_0" width='100' height='100'>
+        <h1>
+            Search Results
+        </h1>
+        <link  rel="stylesheet" href = "styles.css"/>
+    </head>
+
+    <body>
+        <table border: 10px>
+            <tr>
+                <th>School Name</th>
+                <th>Staff Name</th>
+                <th>Department</th>
+                <th>Contact</th>
+                <th>Address</th>
+            </tr>
+
+            {% for i in range(school|length) %}
+                <tr>
+                    <td>{{school[i]}}</td>
+                    <td>{{staff[i]}}</td>
+                    <td>{{department[i]}}</td>
+                    <td>{{contact[i]}}</td>
+                    <td>{{address[i]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <button onclick = "history.back()">Back</button>
+    </body>
+</html>

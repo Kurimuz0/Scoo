@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Ministry of Educatoring
+        </title>
+        <!img src = "https://www.seab.gov.sg/images/default-source/default-album/seab_logoba82a65ec03b4db6bb20271b22140400.png?sfvrsn=6e64f8ba_0" width='100' height='100'>
+        <h1>
+            Ministry of Educatoring
+        </h1>
+    </head>
+
+    <body>
+        <form action = "{{url_for('search')}}" method = "POST">
+            <p>Staff Directory</p>
+
+            <table>
+                <tr>
+                    <th>
+                        <p align = "left">School Name</p><input name = "SchoolName">
+                        <p align = "left">Department</p><input name = "Department">
+                    </th>
+                </tr>
+            </table>
+
+            <input type = "submit" value = "Search">
+        </form>
+    </body>
+</html>
